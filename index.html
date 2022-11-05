@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="public/reset.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <title>Ánh Dương</title>
+  </head>
+  <body>
+    <div class="warpper">
+      <nav class="nav mg50">
+        <div class="nav__title">
+          <span class="header-logo"><a href="">FURNI.COM</a></span>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item-top">
+            <i class="fa-solid fa-phone"></i>
+            0904 328 000
+          </li>
+          <li class="nav__item-top">
+            <i class="fa-regular fa-envelope"></i>
+            gmail.com
+          </li>
+          <li class="nav__item-top">
+            <i class="fa-solid fa-user"></i>
+            login
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav position-relative">
+        <div class="mg50">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="">HOME</a>
+            </li>
+            <li class="nav__item nav__item-page">
+              <a href="" class="">
+                PAGES
+                <i class="fa-sharp fa-solid fa-chevron-down"></i>
+              </a>
+              <div class="nav__item-page-dropdow">
+                <div class="page-dropdow-container row">
+                  <div class="col-xl-2">
+                    <ul class="features-dropdow-list">
+                      <li class="tablinks" onmouseover="openCity(event, '1')">
+                        Phòng ngủ
+                      </li>
+                      <li class="tablinks" onmouseover="openCity(event, '2')">
+                        Phòng Khách
+                      </li>
+                      <li class="tablinks" onmouseover="openCity(event, '3')">
+                        Nhà Bếp
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-xl-10">
+                    <div id="1" class="tabcontent" style="display: block">
+                      <div class="row">
+                        <div class="col-xl-6">
+                          <img src="./img/ct-nav-7.webp" alt="" width="300" />
+                        </div>
+                        <div class="col-xl-6 features-dropdow-main-right">
+                          <h1 class="features-dropdow-main-right-title">Ghế</h1>
+                          <p style="margin: 50px 0; font-style: italic">
+                            Thư giãn, thoải mái, tiện nghi
+                          </p>
+                          <button type="button" class="btn btn-danger">
+                            Xem ngay
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="2" class="tabcontent">
+                      <div class="row">
+                        <div class="col-xl-6">
+                          <img src="./img/ct-nav-4.webp" alt="" width="300" />
+                        </div>
+                        <div class="col-xl-6 features-dropdow-main-right">
+                          <h1 class="features-dropdow-main-right-title">
+                            Giường ngủ cao cấp
+                          </h1>
+                          <p style="margin: 50px 0; font-style: italic">
+                            Thư giãn, thoải mái, tiện nghi
+                          </p>
+                          <button type="button" class="btn btn-danger">
+                            Xem ngay
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="3" class="tabcontent">
+                      <div class="row">
+                        <div class="col-xl-6">
+                          <img src="./img/ct-nav-2.webp" alt="" width="300" />
+                        </div>
+                        <div class="col-xl-6 features-dropdow-main-right">
+                          <h1 class="features-dropdow-main-right-title">
+                            Ghế cao
+                          </h1>
+                          <p style="margin: 50px 0; font-style: italic">
+                            Thư giãn, thoải mái, tiện nghi
+                          </p>
+                          <button type="button" class="btn btn-danger">
+                            Xem ngay
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item nav__item-features">
+              <a href="">
+                FEATUES
+                <i class="fa-sharp fa-solid fa-chevron-down"></i>
+              </a>
+              <div class="nav__item-features-dropdow">
+                <div class="features-dropdow-container row">
+                  <div class="col-xl-2">
+                    <ul class="features-dropdow-list">
+                      <li
+                        class="tablinks"
+                        onmouseover="openCity(event, 'bedroom')"
+                      >
+                        Phòng ngủ
+                      </li>
+                      <li
+                        class="tablinks"
+                        onmouseover="openCity(event, 'livingroom')"
+                      >
+                        Phòng Khách
+                      </li>
+                      <li
+                        class="tablinks"
+                        onmouseover="openCity(event, 'kitchen')"
+                      >
+                        Nhà Bếp
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-xl-10">
+                    <div id="bedroom" class="tabcontent" style="display: block">
+                      <div class="row">
+                        <div class="col-xl-6">
+                          <img src="./img/ct-nav-5.webp" alt="" width="300" />
+                        </div>
+                        <div class="col-xl-6 features-dropdow-main-right">
+                          <h1 class="features-dropdow-main-right-title">Ghế</h1>
+                          <p style="margin: 50px 0; font-style: italic">
+                            Thư giãn, thoải mái, tiện nghi
+                          </p>
+                          <button type="button" class="btn btn-danger">
+                            Xem ngay
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="livingroom" class="tabcontent">
+                      <div class="row">
+                        <div class="col-xl-6">
+                          <img src="./img/ct-nav-8.webp" alt="" width="300" />
+                        </div>
+                        <div class="col-xl-6 features-dropdow-main-right">
+                          <h1 class="features-dropdow-main-right-title">
+                            Giường ngủ cao cấp
+                          </h1>
+                          <p style="margin: 50px 0; font-style: italic">
+                            Thư giãn, thoải mái, tiện nghi
+                          </p>
+                          <button type="button" class="btn btn-danger">
+                            Xem ngay
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div id="kitchen" class="tabcontent">
+                      <div class="row">
+                        <div class="col-xl-6">
+                          <img src="./img/ct-nav-6.webp" alt="" width="300" />
+                        </div>
+                        <div class="col-xl-6 features-dropdow-main-right">
+                          <h1 class="features-dropdow-main-right-title">
+                            Ghế cao
+                          </h1>
+                          <p style="margin: 50px 0; font-style: italic">
+                            Thư giãn, thoải mái, tiện nghi
+                          </p>
+                          <button type="button" class="btn btn-danger">
+                            Xem ngay
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav__item">
+              <a href="contact.html">
+                Liên Hệ
+                <i class="fa-sharp fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="nav-slider">
+        <div><img src="img/1.png" alt="" /></div>
+        <div><img src="img/2.png" alt="" /></div>
+      </div>
+      <div class="option">
+        <div class="option-title">
+          <h1>RELIABLE CHOICE ANH DUONG</h1>
+        </div>
+        <div class="clear20"></div>
+        <div class="option-content">
+          <p>
+            <strong>Anh Duong </strong>Construction and Furniture Co., Ltd is
+            confident to be the number 1 choice for customers when they have
+            demand for interior design and construction. Each step in a project,
+            we all have our own strengths, different from other companies in the
+            same field, ensuring that our customers are satisfied…
+          </p>
+        </div>
+        <ul class="option-service">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-4">
+                <ul>
+                  <li>
+                    <div class="clear40"></div>
+                    <div class="row">
+                      <div class="col-xl-3">
+                        <a href=""
+                          ><img
+                            src="img/Local-seo.png"
+                            alt="consulting service"
+                            title="consulting service"
+                            width="100px"
+                        /></a>
+                      </div>
+                      <div class="col-xl-9 option-title">
+                        <h2>Thorough and meticulous consultation.</h2>
+                        <p>
+                          More than 500 customers have trusted and used our
+                          service…
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-xl-4">
+                <ul>
+                  <li>
+                    <div class="clear40"></div>
+                    <div class="row">
+                      <div class="col-xl-3">
+                        <a href=""
+                          ><img
+                            src="img/Local-seo.png"
+                            alt="consulting service"
+                            title="consulting service"
+                            width="100px"
+                        /></a>
+                      </div>
+                      <div class="col-xl-9 option-title">
+                        <h2>Thorough and meticulous consultation</h2>
+                        <p>
+                          More than 500 customers have trusted and used our
+                          service…
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-xl-4">
+                <ul>
+                  <li>
+                    <div class="clear40"></div>
+                    <div class="row">
+                      <div class="col-xl-3">
+                        <a href=""
+                          ><img
+                            src="img/Local-seo.png"
+                            alt="consulting service"
+                            title="consulting service"
+                            width="100px"
+                        /></a>
+                      </div>
+                      <div class="col-xl-9 option-title">
+                        <h2>Thorough and meticulous consultation</h2>
+                        <p>
+                          More than 500 customers have trusted and used our
+                          service…
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-xl-4">
+                <ul>
+                  <li>
+                    <div class="clear40"></div>
+                    <div class="row">
+                      <div class="col-xl-3">
+                        <a href=""
+                          ><img
+                            src="img/Local-seo.png"
+                            alt="consulting service"
+                            title="consulting service"
+                            width="100px"
+                        /></a>
+                      </div>
+                      <div class="col-xl-9 option-title">
+                        <h2>Thorough and meticulous consultation</h2>
+                        <p>
+                          More than 500 customers have trusted and used our
+                          service…
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-xl-4">
+                <ul>
+                  <li>
+                    <div class="clear40"></div>
+                    <div class="row">
+                      <div class="col-xl-3">
+                        <a href=""
+                          ><img
+                            src="img/Local-seo.png"
+                            alt="consulting service"
+                            title="consulting service"
+                            width="100px"
+                        /></a>
+                      </div>
+                      <div class="col-xl-9 option-title">
+                        <h2>Thorough and meticulous consultation</h2>
+                        <p>
+                          More than 500 customers have trusted and used our
+                          service…
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-xl-4">
+                <ul>
+                  <li>
+                    <div class="clear40"></div>
+                    <div class="row">
+                      <div class="col-xl-3">
+                        <a href=""
+                          ><img
+                            src="img/Local-seo.png"
+                            alt="consulting service"
+                            title="consulting service"
+                            width="100px"
+                        /></a>
+                      </div>
+                      <div class="col-xl-9 option-title">
+                        <h2>Thorough and meticulous consultation</h2>
+                        <p>
+                          More than 500 customers have trusted and used our
+                          service…
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </div>
+      <div class="clear60"></div>
+      <div class="main">
+        <div class="clear40"></div>
+        <div class="product-home1290">
+          <div class="mg50">
+            <div class="image-slider">
+              <div class="product-home-image-item">
+                <div class="image">
+                  <img src="img/product_s141-sp.jpg" alt="" />
+                </div>
+                <div class="product-cart">
+                  <a href="#" class="product-cart-ds-buy"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                </div>
+                <div class="product-price">$43.94</div>
+                <h1>typical products</h1>
+              </div>
+
+              <div class="product-home-image-item">
+                <div class="image">
+                  <img src="img/product_s186-sp.jpg" alt="" />
+                </div>
+                <div class="product-cart">
+                  <a href="#" class="product-cart-ds-buy"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                </div>
+                <div class="product-price">$43.94</div>
+                <h1>typical products</h1>
+              </div>
+
+              <div class="product-home-image-item">
+                <div class="image">
+                  <img src="img/product_3.jpg" alt="" />
+                </div>
+                <div class="product-cart">
+                  <a href="#" class="product-cart-ds-buy"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                </div>
+                <div class="product-price">$43.94</div>
+                <h1>typical products</h1>
+              </div>
+
+              <div class="product-home-image-item">
+                <div class="image">
+                  <img src="img/product_s155-sp.jpg" alt="" />
+                </div>
+                <div class="product-cart">
+                  <a href="#" class="product-cart-ds-buy"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                </div>
+                <div class="product-price">$43.94</div>
+                <h1>typical products</h1>
+              </div>
+
+              <div class="product-home-image-item">
+                <div class="image">
+                  <img src="img/product_s155-sp.jpg" alt="" />
+                </div>
+                <div class="product-cart">
+                  <a href="#" class="product-cart-ds-buy"
+                    ><i class="fa-solid fa-cart-shopping"></i
+                  ></a>
+                </div>
+                <div class="product-price">$43.94</div>
+                <h1>typical products</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="clear60"></div>
+
+        <div class="product-ct">
+          <div class="product-ct-header">
+            <div class="row">
+              <div class="col-xl-3">
+                <div class="ct-text">
+                  <h1>Finishing Touches</h1>
+                  <div class="clear20"></div>
+                  <div class="ct-text-title">
+                    <p>
+                      Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                      Vitae, omnis! Lorem ipsum dolor sit, amet consectetur
+                      adipisicing elit. Facilis, iure.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-3">
+                <div class="ct-images">
+                  <div
+                    class="ct-img"
+                    style="
+                      background-image: url(./img/product_s85-tu.jpg);
+                      background-size: cover;
+                      background-position: center;
+                      width: 100%;
+                      height: 300px;
+                    "
+                  ></div>
+                  <div class="clear20"></div>
+                  <div class="ct-img-title">
+                    <a href="">Bar&counter Stools ></a>
+                  </div>
+                </div>
+                <div class="clear20"></div>
+              </div>
+              <div class="col-xl-3">
+                <div class="ct-images">
+                  <div
+                    class="ct-img"
+                    style="
+                      background-image: url(./img/product_s85-tu.jpg);
+                      background-size: cover;
+                      background-position: center;
+                      width: 100%;
+                      height: 300px;
+                    "
+                  ></div>
+                  <div class="clear20"></div>
+                  <div class="ct-img-title">
+                    <a href="">Bar&counter Stools ></a>
+                  </div>
+                </div>
+                <div class="clear20"></div>
+              </div>
+              <div class="col-xl-3">
+                <div class="ct-images">
+                  <div
+                    class="ct-img"
+                    style="
+                      background-image: url(./img/product_s85-tu.jpg);
+                      background-size: cover;
+                      background-position: center;
+                      width: 100%;
+                      height: 300px;
+                    "
+                  ></div>
+                  <div class="clear20"></div>
+                  <div class="ct-img-title">
+                    <a href="">Bar&counter Stools ></a>
+                  </div>
+                </div>
+                <div class="clear20"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        class="product-ct-nav"
+        style="
+          background-image: url(./img/header-demo1.jpg);
+          background-size: cover;
+          background-position: center;
+        "
+      ></div>
+
+      <div class="clear20"></div>
+
+      <div class="ct-nav-item">
+        <h1>HOME OFFICE FAVORITES</h1>
+        <div class="image-slider">
+          <div class="image-item">
+            <div
+              class="ct-nav-image"
+              style="
+                background-image: url(/img/ct-nav-1.webp);
+                background-size: cover;
+              "
+            ></div>
+            <h1 class="image-title" style="color: white">Typical products</h1>
+            <div class="ct-nav-ds">
+              <div class="ct-nav-ds-price">$43.94</div>
+              <div class="ct-nav-ds-cart">
+                <a href="#" class="ct-nav-ds-buy"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="image-item">
+            <div
+              class="ct-nav-image"
+              style="
+                background-image: url(/img/ct-nav-2.webp);
+                background-size: cover;
+              "
+            ></div>
+            <h1 class="image-title" style="color: white">Typical products</h1>
+            <div class="ct-nav-ds">
+              <div class="ct-nav-ds-price">$43.94</div>
+              <div class="ct-nav-ds-cart">
+                <a href="#" class="ct-nav-ds-buy"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="image-item">
+            <div
+              class="ct-nav-image"
+              style="
+                background-image: url(/img/ct-nav-3.webp);
+                background-size: cover;
+              "
+            ></div>
+            <h1 class="image-title" style="color: white">Typical products</h1>
+            <div class="ct-nav-ds">
+              <div class="ct-nav-ds-price">$43.94</div>
+              <div class="ct-nav-ds-cart">
+                <a href="#" class="ct-nav-ds-buy"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="image-item">
+            <div
+              class="ct-nav-image"
+              style="
+                background-image: url(/img/ct-nav-6.webp);
+                background-size: cover;
+              "
+            ></div>
+            <h1 class="image-title" style="color: white">Typical products</h1>
+            <div class="ct-nav-ds">
+              <div class="ct-nav-ds-price">$43.94</div>
+              <div class="ct-nav-ds-cart">
+                <a href="#" class="ct-nav-ds-buy"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="image-item">
+            <div
+              class="ct-nav-image"
+              style="
+                background-image: url(/img/ct-nav-5.webp);
+                background-size: cover;
+              "
+            ></div>
+
+            <div class="ct-nav-ds">
+              <div class="ct-nav-ds-price">$43.94</div>
+              <div class="ct-nav-ds-cart">
+                <a href="#" class="ct-nav-ds-buy"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ct-nav-itemII">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-6">
+                <div class="ct-nav-itemII-image">
+                  <img src="img/product_s89-tu.jpg" alt="" />
+                  <p class="ct-nav-itemII-sale">- 65%</p>
+                </div>
+              </div>
+              <div class="col-xl-6">
+                <div class="ct-nav-itemII-text">
+                  <h1>Welcome to Farnic</h1>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quisquam cumque cupiditate aspernatur. Minus exercitationem
+                    doloremque dolorum dignissimos laboriosam a, perferendis
+                    animi eveniet dolorem enim! Placeat laborum tempore dolore a
+                    quis! Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Dolor dolores at corrupti ab sequi totam expedita
+                    eaque cupiditate possimus ad eveniet aliquam, nulla magnam
+                    quidem culpa quibusdam quia amet eum? Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Cupiditate doloribus
+                    maiores, quis recusandae eveniet, vel dolorum tempora eum a,
+                    et sed voluptatem nostrum id dignissimos quidem enim
+                    repellendus autem iste?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clear60"></div>
+
+      <div class="featured-products">
+        <div class="row">
+          <div class="col-xl-6">
+            <div class="featured-product-image">
+              <div
+                class="featured-title"
+                style="background-image: url(/img/product-hot.jpg)"
+              >
+                <a href="">
+                  <img src="img/product-hot.jpg" alt="" />
+                  <h1>Double rewards</h1>
+                  <p class="featured-text">
+                    $50 reward for every $250 spent using your Ballard Designs
+                    Credit Card. $1 = 2 point(s).*** Offer valid 11/3/22 -
+                    11/8/22.
+                  </p>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-6">
+            <div class="featured-product-image">
+              <div class="featured-title">
+                <a href="">
+                  <img src="img/product-hot1.jpg" alt="" />
+                  <h1>20% off outdoor clearance</h1>
+                  <div class="featured-title">
+                    <p class="featured-text">
+                      Transition your outdoor space for fall with these great
+                      deals.
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ct-nav-blog">
+          <div class="row">
+            <h1>LATEST FROM THE BLOG</h1>
+            <div class="col-xl-3">
+              <div class="ct-nav-blog-item">
+                <div class="ct-nav-blog-image">
+                  <img src="img/blog1.jpg" alt="" />
+                </div>
+                <div class="ct-nav-date">
+                  <ul>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-calendar-days"></i> 13th
+                      Jun 2021
+                    </li>
+                    <li><i class="fa-regular fa-comments"></i> 53</li>
+                  </ul>
+                  <p>
+                    Prevention effect, advocate dialogue rural development
+                    lifting people up community civil society. Catalyst,
+                    grantees leverage.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3">
+              <div class="ct-nav-blog-item">
+                <div class="ct-nav-blog-image">
+                  <img src="img/blog4.jpg" alt="" />
+                </div>
+                <div class="ct-nav-date">
+                  <ul>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-calendar-days"></i> 13th
+                      Jun 2021
+                    </li>
+                    <li><i class="fa-regular fa-comments"></i> 53</li>
+                  </ul>
+                  <p>
+                    Prevention effect, advocate dialogue rural development
+                    lifting people up community civil society. Catalyst,
+                    grantees leverage.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3">
+              <div class="ct-nav-blog-item">
+                <div class="ct-nav-blog-image">
+                  <img src="img/blog3.jpg" alt="" />
+                </div>
+                <div class="ct-nav-date">
+                  <ul>
+                    <li>
+                      <i class="fa-sharp fa-solid fa-calendar-days"></i> 13th
+                      Jun 2021
+                    </li>
+                    <li><i class="fa-regular fa-comments"></i> 53</li>
+                  </ul>
+                  <p>
+                    Prevention effect, advocate dialogue rural development
+                    lifting people up community civil society. Catalyst,
+                    grantees leverage.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-3">
+              <div class="ct-nav-blog-item">
+                <div class="ct-nav-blog-image">
+                  <img src="img/blog2.jpg" alt="" />
+
+                  <div class="ct-nav-date">
+                    <ul>
+                      <li>
+                        <i class="fa-sharp fa-solid fa-calendar-days"></i> 13th
+                        Jun 2021
+                      </li>
+                      <li><i class="fa-regular fa-comments"></i> 53</li>
+                    </ul>
+                    <p>
+                      Prevention effect, advocate dialogue rural development
+                      lifting people up community civil society. Catalyst,
+                      grantees leverage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="clear20"></div>
+
+      <div
+        class="product-ct-nav"
+        style="
+          background-image: url(./img/header-demo2.jpg);
+          background-size: cover;
+          background-position: center;
+        "
+      ></div>
+      <!-- main-product -->
+      <!-- footer -->
+      <footer>
+        <div class="footer-backround">
+          <div class="row">
+            <div class="col-xl-4">
+              <div class="footer-information">
+                <h1>Thông Tin Công Ty</h1>
+                <ul class="information">
+                  <li>+ Địa Chỉ</li>
+                  <li>+ Xưởng Sản Xuất</li>
+                  <li>+ Điện Thoại</li>
+                  <li>+ Email:</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl-4">
+              <div class="footer-information">
+                <h1>Thông Tin Hữu Ích</h1>
+                <ul class="information">
+                  <li><i class="fa-solid fa-chevron-right"></i> Bảng Giá</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> Cam Kết</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> Quy Trình</li>
+                  <li><i class="fa-solid fa-chevron-right"></i> Chính Sách</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-xl-4">
+              <div class="footer-information">
+                <h1>Mạng Xã Hội</h1>
+                <uk class="footer-network">
+                  <li class="footer-img-fb">
+                    <img src="img/logo-face.png" alt="" />
+                    <a href="" class="footer-network">
+                      <p>Fanpage FaceBook</p>
+                    </a>
+                  </li>
+                  <li class="footer-img-youtube">
+                    <a href=""
+                      ><img src="img/logo-you.png" alt="" />
+                      <p>Youtube Nội Thất</p>
+                    </a>
+                  </li>
+                  <div class="clear20"></div>
+                  <li class="footer-social-network">
+                    <span
+                      ><i class="fa-brands fa-facebook text-primary"></i
+                    ></span>
+                    <span
+                      ><i class="fa-brands fa-instagram text-info"></i
+                    ></span>
+                    <span
+                      ><i class="fa-brands fa-tiktok text-white-50"></i
+                    ></span>
+                    <span
+                      ><i class="fa-brands fa-google-plus text-danger"></i
+                    ></span>
+                  </li>
+                </uk>
+              </div>
+            </div>
+          </div>
+          <p style="color: white">No Copyright 1996</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="public/js/app.js"></script>
+</html>

@@ -1,0 +1,220 @@
+/* option */
+.container-fuild {
+  width: 1290px;
+  border: 1px solid red;
+  max-width: 100%;
+  margin: auto;
+  color: white;
+}
+.producst-representative {
+  margin: 10px;
+}
+.producst-representative ul h1 {
+  font-size: 30px;
+  color: red;
+  font-weight: 500;
+  font-family: "Lemon", cursive;
+  padding: 10px;
+  border-bottom: 2px solid red;
+}
+.product-main-item {
+  border: 3px solid #b23f3f;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+.images img {
+  width: 100%;
+  height: 250px;
+  border-radius: 12px;
+}
+
+/* product-home */
+.product-home1090 {
+  width: 1290px;
+  height: 1500px;
+  background: white;
+  margin: 0 auto;
+}
+.producst-representative {
+  width: 100%;
+  height: 400px;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background-image: url(/img/slide_1.jpg);
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+.footer-backround {
+  width: 100%;
+  background: rgba(8, 8, 8, 0.8);
+  padding: 30px;
+  z-index: 1;
+  text-align: start;
+}
+.footer-information h1 {
+  z-index: 10;
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  font-family: "Lemon", cursive;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid red;
+}
+.information li {
+  padding: 5px;
+  margin: 5px;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  z-index: 10;
+}
+.footer-img-fb p,
+.footer-img-youtube p {
+  display: inline-block;
+}
+.footer-img-fb img,
+.footer-img-youtube img {
+  width: 30px;
+}
+
+/* slider produc */
+.image-slider {
+  padding-bottom: 50px;
+}
+.image {
+  height: 500px;
+  margin: 15px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+}
+.image-title {
+  font-size: 20px;
+  color: black;
+}
+.slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  width: 50px;
+  height: 50px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  line-height: 1;
+  z-index: 10;
+}
+.slick-arrow:hover {
+  background-color: #2cccff;
+  color: white;
+}
+.slick-prev {
+  left: 0;
+}
+.slick-next {
+  right: 0;
+}
+.slick-dots {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%, 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0 20px;
+}
+.slick-dots button {
+  font-size: 0;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid #22222245;
+  outline: none;
+}
+.slick-dots .slick-active button {
+  background: #2cccff;
+}
+/* Category */
+
+.category {
+  width: 100%;
+  max-width: 1390px;
+  height: auto;
+  margin: 0 auto;
+}
+.category-product {
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-item {
+  width: 31%;
+  margin: 2px;
+  border: 1px solid #111111;
+  overflow: hidden;
+}
+.catelogy-image,
+.catelogy-image-I,
+.catelogy-image-II,
+.catelogy-image-III,
+.catelogy-image-IV,
+.catelogy-image-V {
+  width: 200%;
+  height: 400px;
+  background-size: 200%;
+  background-repeat: no-repeat;
+  background-position: center right;
+}
+.catelogy-image {
+  background-image: url(/img/cart-product-1.webp);
+}
+.catelogy-image-I {
+  background-image: url(/img/cart-product-2.webp);
+}
+.catelogy-image-II {
+  background-image: url(/img/cart-product-3.webp);
+}
+.catelogy-image-III {
+  background-image: url(/img/cart-product-4.webp);
+}
+.catelogy-image-IV {
+  background-image: url(/img/cart-product-5.webp);
+}
+.catelogy-image-V {
+  background-image: url(/img/cart-product-6.webp);
+}
+
+.category-item .catelogy-image:hover {
+  background-size: 100%;
+  transition: 0.9s;
+}
+.category-item .catelogy-image-I:hover {
+  background-size: 100%;
+  transition: 0.5s;
+}
+.category-item .catelogy-image-II:hover {
+  background-size: 100%;
+  transition: 0.5s;
+}
+.category-item .catelogy-image-III:hover {
+  background-size: 100%;
+  transition: 0.5s;
+}
+.category-item .catelogy-image-IV:hover {
+  background-image: url(/img/cart-product-1.webp);
+  background-size: 100%;
+  transition: 0.5s;
+}
+.category-item .catelogy-image-V:hover {
+  background-size: 100%;
+  transition: 0.5s;
+}
