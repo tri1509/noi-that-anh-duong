@@ -42,14 +42,14 @@
           </li>
         </ul>
       </nav>
-      <nav class="nav position-relative">
+      <nav class="nav position-relative" id="nav">
         <div class="mg50">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="">HOME</a>
             </li>
             <li class="nav__item nav__item-page">
-              <a href="" class="">
+              <a href="product.html" class="">
                 PAGES
                 <i class="fa-sharp fa-solid fa-chevron-down"></i>
               </a>
@@ -136,26 +136,26 @@
                     <ul class="features-dropdow-list">
                       <li
                         class="tablinks-1"
-                        onmouseover="openfeatues(event, 'bedroom')"
+                        onmouseover="openfeatues(event, '4')"
                       >
                         Phòng ngủ
                       </li>
                       <li
                         class="tablinks-1"
-                        onmouseover="openfeatues(event, 'livingroom')"
+                        onmouseover="openfeatues(event, '5')"
                       >
                         Phòng Khách
                       </li>
                       <li
                         class="tablinks-1"
-                        onmouseover="openfeatues(event, 'kitchen')"
+                        onmouseover="openfeatues(event, '6')"
                       >
                         Nhà Bếp
                       </li>
                     </ul>
                   </div>
                   <div class="col-xl-10">
-                    <div id="bedroom" class="tabcontent" style="display: block">
+                    <div id="4" class="tabcontent-1" style="display: block">
                       <div class="row">
                         <div class="col-xl-6">
                           <img src="./img/ct-nav-5.webp" alt="" width="300" />
@@ -171,7 +171,7 @@
                         </div>
                       </div>
                     </div>
-                    <div id="livingroom" class="tabcontent">
+                    <div id="5" class="tabcontent-1">
                       <div class="row">
                         <div class="col-xl-6">
                           <img src="./img/ct-nav-8.webp" alt="" width="300" />
@@ -189,7 +189,7 @@
                         </div>
                       </div>
                     </div>
-                    <div id="kitchen" class="tabcontent">
+                    <div id="6" class="tabcontent-1">
                       <div class="row">
                         <div class="col-xl-6">
                           <img src="./img/ct-nav-6.webp" alt="" width="300" />
@@ -213,11 +213,14 @@
             </li>
             <li class="nav__item">
               <a href="contact.html">
-                Liên Hệ
+                Contact
                 <i class="fa-sharp fa-solid fa-chevron-down"></i>
               </a>
             </li>
           </ul>
+        </div>
+        <div class="mg50">
+          <a href="#" class="js-search-toggle"><i class="fa-solid fa-magnifying-glass"></i></a>
         </div>
       </nav>
       <div class="nav-slider">
@@ -252,7 +255,7 @@
                             src="img/Local-seo.png"
                             alt="consulting service"
                             title="consulting service"
-                            width="100px"
+                            width="100%"
                         /></a>
                       </div>
                       <div class="col-xl-9 option-title">
@@ -278,7 +281,7 @@
                             src="img/Local-seo.png"
                             alt="consulting service"
                             title="consulting service"
-                            width="100px"
+                            width="100%"
                         /></a>
                       </div>
                       <div class="col-xl-9 option-title">
@@ -304,7 +307,7 @@
                             src="img/Local-seo.png"
                             alt="consulting service"
                             title="consulting service"
-                            width="100px"
+                            width="100%"
                         /></a>
                       </div>
                       <div class="col-xl-9 option-title">
@@ -330,7 +333,7 @@
                             src="img/Local-seo.png"
                             alt="consulting service"
                             title="consulting service"
-                            width="100px"
+                            width="100%"
                         /></a>
                       </div>
                       <div class="col-xl-9 option-title">
@@ -356,7 +359,7 @@
                             src="img/Local-seo.png"
                             alt="consulting service"
                             title="consulting service"
-                            width="100px"
+                            width="100%"
                         /></a>
                       </div>
                       <div class="col-xl-9 option-title">
@@ -382,7 +385,7 @@
                             src="img/Local-seo.png"
                             alt="consulting service"
                             title="consulting service"
-                            width="100px"
+                            width="100%"
                         /></a>
                       </div>
                       <div class="col-xl-9 option-title">
@@ -740,7 +743,7 @@
             <div class="col-xl-3">
               <div class="ct-nav-blog-item">
                 <div class="ct-nav-blog-image">
-                  <img src="img/blog1.jpg" alt="" />
+                  <img src="img/blog1.jpg" alt="" width="100%" />
                 </div>
                 <div class="ct-nav-date">
                   <ul>
@@ -762,7 +765,7 @@
             <div class="col-xl-3">
               <div class="ct-nav-blog-item">
                 <div class="ct-nav-blog-image">
-                  <img src="img/blog4.jpg" alt="" />
+                  <img src="img/blog4.jpg" alt="" width="100%" />
                 </div>
                 <div class="ct-nav-date">
                   <ul>
@@ -784,7 +787,7 @@
             <div class="col-xl-3">
               <div class="ct-nav-blog-item">
                 <div class="ct-nav-blog-image">
-                  <img src="img/blog3.jpg" alt="" />
+                  <img src="img/blog3.jpg" alt="" width="100%" />
                 </div>
                 <div class="ct-nav-date">
                   <ul>
@@ -806,7 +809,7 @@
             <div class="col-xl-3">
               <div class="ct-nav-blog-item">
                 <div class="ct-nav-blog-image">
-                  <img src="img/blog2.jpg" alt="" />
+                  <img src="img/blog2.jpg" alt="" width="100%" />
 
                   <div class="ct-nav-date">
                     <ul>
@@ -830,7 +833,6 @@
       </div>
 
       <div class="clear20"></div>
-
       <div
         class="product-ct-nav"
         style="
@@ -839,73 +841,91 @@
           background-position: center;
         "
       ></div>
-      <!-- main-product -->
-      <!-- footer -->
+
       <footer>
         <div class="footer-backround">
-          <div class="row">
-            <div class="col-xl-4">
-              <div class="footer-information">
-                <h1>Thông Tin Công Ty</h1>
-                <ul class="information">
-                  <li>+ Địa Chỉ</li>
-                  <li>+ Xưởng Sản Xuất</li>
-                  <li>+ Điện Thoại</li>
-                  <li>+ Email:</li>
-                </ul>
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-4">
+                <div class="footer-information">
+                  <h1>Thông Tin Công Ty</h1>
+                  <ul class="information">
+                    <li>
+                      <p>
+                        + Địa chỉ: 235/52 đường trục, Phường 13, Quận Bình
+                        Thạnh, Tp.HCM
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        + Xưởng sản xuất: 175A đường Vườn Lài , Phường An Phú
+                        Đông, Quận 12, Tp.HCM
+                      </p>
+                    </li>
+                    <li>
+                      <p>+ Điện thoại: 03 555 34567 - Zalo: 03 555 34567</p>
+                    </li>
+                    <li><p>+ Email: noithat.adt@gmail.com</p></li>
+                  </ul>
+                </div>
               </div>
-            </div>
 
-            <div class="col-xl-4">
-              <div class="footer-information">
-                <h1>Thông Tin Hữu Ích</h1>
-                <ul class="information">
-                  <li><i class="fa-solid fa-chevron-right"></i> Bảng Giá</li>
-                  <li><i class="fa-solid fa-chevron-right"></i> Cam Kết</li>
-                  <li><i class="fa-solid fa-chevron-right"></i> Quy Trình</li>
-                  <li><i class="fa-solid fa-chevron-right"></i> Chính Sách</li>
-                </ul>
+              <div class="col-xl-4">
+                <div class="footer-information">
+                  <h1>Thông Tin Hữu Ích</h1>
+                  <ul class="information">
+                    <li><i class="fa-solid fa-chevron-right"></i>Bảng Giá</li>
+                    <li><i class="fa-solid fa-chevron-right"></i>Cam Kết</li>
+                    <li><i class="fa-solid fa-chevron-right"></i>Quy Trình</li>
+                    <li><i class="fa-solid fa-chevron-right"></i>Chính Sách</li>
+                  </ul>
+                </div>
               </div>
-            </div>
 
-            <div class="col-xl-4">
-              <div class="footer-information">
-                <h1>Mạng Xã Hội</h1>
-                <uk class="footer-network">
-                  <li class="footer-img-fb">
-                    <img src="img/logo-face.png" alt="" />
-                    <a href="" class="footer-network">
-                      <p>Fanpage FaceBook</p>
-                    </a>
-                  </li>
-                  <li class="footer-img-youtube">
-                    <a href=""
-                      ><img src="img/logo-you.png" alt="" />
-                      <p>Youtube Nội Thất</p>
-                    </a>
-                  </li>
-                  <div class="clear20"></div>
-                  <li class="footer-social-network">
-                    <span
-                      ><i class="fa-brands fa-facebook text-primary"></i
-                    ></span>
-                    <span
-                      ><i class="fa-brands fa-instagram text-info"></i
-                    ></span>
-                    <span
-                      ><i class="fa-brands fa-tiktok text-white-50"></i
-                    ></span>
-                    <span
-                      ><i class="fa-brands fa-google-plus text-danger"></i
-                    ></span>
-                  </li>
-                </uk>
+              <div class="col-xl-4">
+                <div class="footer-information">
+                  <h1>Mạng Xã Hội</h1>
+                  <ul class="information">
+                    <li class="footer-img">
+                      <img src="img/logo-face.png" alt="" />
+                      <a href="" class="footer-network">
+                        <p>Fanpage FaceBook</p>
+                      </a>
+                    </li>
+                    <li class="footer-img">
+                      <img src="img/logo-you.png" alt="" />
+                      <a href="">
+                        <p>Youtube Nội Thất</p>
+                      </a>
+                    </li>
+                    <div class="clear20"></div>
+                    <li class="footer-social-network">
+                      <img src="img/logo-face.png" alt="" />
+                      <img src="img/logo-you.png" alt="" />
+                      <img src="img/logo-face.png" alt="" />
+                      <img src="img/logo-you.png" alt="" />
+                    </li>
+                  </uk>
+                </div>
               </div>
             </div>
           </div>
-          <p style="color: white">No Copyright 1996</p>
         </div>
       </footer>
+    </div>
+    <div class="search-wrap">
+      <a href="#" class="close-search js-search-toggle">
+        <span>Close</span>
+      </a>
+      <div class="container">
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-md-12">
+            <form action="#">
+              <input type="search" name="s" id="s" placeholder="Type a keyword and hit enter..." autocomplete="false">
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>

@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Ubuntu:wght@300&display=swap");
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 40px 30px;
+  padding: 20px 20%;
+  position: relative;
+}
+
+.product-grid-item {
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.product-grid-title {
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background: #2d3b58;
+  width: 200px;
+  padding: 20px 0;
+  text-align: center;
+  z-index: 100;
+  transition: 0.7s;
+  filter: blur(10px);
+}
+.product-grid-title a {
+  color: #f1edea;
+  font-size: 1rem;
+  font-weight: 300;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  letter-spacing: 1px;
+}
+.product-grid-item:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff33;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity ease-in-out 0.7s;
+}
+.product-grid-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  filter: blur(10px);
+  transition: 0.7s;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 999;
+}
+.product-grid-icon i {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.product-grid-item:hover .product-grid-title {
+  bottom: 10%;
+  filter: blur(0);
+}
+.product-grid-item:hover .product-grid-images {
+  transform: scale(1.2);
+}
+.product-grid-images {
+  transition: 0.3s;
+}
+.product-grid-images img {
+  width: 100%;
+}
+
+.product-grid-item:hover .product-grid-icon {
+  background: #f1edea;
+  filter: blur(0);
+  opacity: 1;
+}
+
+.product-grid-item:hover:after {
+  opacity: 1;
+  visibility: visible;
+}
+.product-fornt h1 {
+  font-family: "Ubuntu", sans-serif;
+}
+h1 {
+  font-family: "Kolker Brush", cursive;
+  font-size: 3.6rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  padding: 20px;
+  text-align: center;
+}
