@@ -23,206 +23,295 @@
   </head>
   <body>
     <div class="warpper">
-      <nav class="nav mg50">
-        <div class="nav__title">
-          <span class="header-logo"><a href="">FURNI.COM</a></span>
-        </div>
-        <ul class="nav__list">
-          <li class="nav__item-top">
-            <i class="fa-solid fa-phone"></i>
-            0904 328 000
-          </li>
-          <li class="nav__item-top">
-            <i class="fa-regular fa-envelope"></i>
-            gmail.com
-          </li>
-          <li class="nav__item-top">
-            <i class="fa-solid fa-user"></i>
-            login
-          </li>
-        </ul>
-      </nav>
-      <nav class="nav position-relative" id="nav">
-        <div class="mg50">
+      <header class="hide911">
+        <nav class="nav mg50">
+          <div class="nav__title">
+            <span class="header-logo"><a href="">FURNI.COM</a></span>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item-top">
+              <i class="fa-solid fa-phone"></i>
+              0904 328 000
+            </li>
+            <li class="nav__item-top">
+              <i class="fa-regular fa-envelope"></i>
+              gmail.com
+            </li>
+            <li class="nav__item-top">
+              <i class="fa-solid fa-user"></i>
+              login
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav position-relative" id="nav">
+          <div class="mg50">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="">HOME</a>
+              </li>
+              <li class="nav__item nav__item-page">
+                <a href="product.html" class="">
+                  PAGES
+                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="nav__item-page-dropdow">
+                  <div class="container page-dropdow-container">
+                    <div class="row">
+                      <div class="col-4">
+                        <ul class="features-dropdow-list">
+                          <li
+                            class="tablinks"
+                            onmouseover="openpage(event, '1')"
+                          >
+                            Phòng ngủ
+                          </li>
+                          <li
+                            class="tablinks"
+                            onmouseover="openpage(event, '2')"
+                          >
+                            Phòng Khách
+                          </li>
+                          <li
+                            class="tablinks"
+                            onmouseover="openpage(event, '3')"
+                          >
+                            Nhà Bếp
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-8">
+                        <div id="1" class="tabcontent" style="display: block">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-7.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Ghế
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="2" class="tabcontent">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-4.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Giường ngủ cao cấp
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="3" class="tabcontent">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-2.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Ghế cao
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item nav__item-features">
+                <a href="">
+                  FEATUES
+                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="nav__item-features-dropdow">
+                  <div class="container features-dropdow-container">
+                    <div class="row">
+                      <div class="col-4">
+                        <ul class="features-dropdow-list">
+                          <li
+                            class="tablinks-1"
+                            onmouseover="openfeatues(event, '4')"
+                          >
+                            Phòng ngủ
+                          </li>
+                          <li
+                            class="tablinks-1"
+                            onmouseover="openfeatues(event, '5')"
+                          >
+                            Phòng Khách
+                          </li>
+                          <li
+                            class="tablinks-1"
+                            onmouseover="openfeatues(event, '6')"
+                          >
+                            Nhà Bếp
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-8">
+                        <div id="4" class="tabcontent-1" style="display: block">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-5.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Ghế
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="5" class="tabcontent-1">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-8.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Giường ngủ cao cấp
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="6" class="tabcontent-1">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-6.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Ghế cao
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a href="contact.html">
+                  Contact
+                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="mg50">
+            <a href="#" class="js-search-toggle"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </div>
+        </nav>
+      </header>
+      <header class="show911">
+        <nav class="nav-mb" id="nav_mb">
+          <span class="nav-bars" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span class="nav-bars">
+            <img src="img/logo-anhduong.png" alt="" width="200" height="auto" />
+          </span>
+          <span class="nav-bars">
+            <a href="#" class="js-search-toggle">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </span>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            &times;
+          </a>
           <ul class="nav__list">
             <li class="nav__item">
               <a href="">HOME</a>
             </li>
-            <li class="nav__item nav__item-page">
-              <a href="product.html" class="">
+            <li class="nav__item">
+              <a href="product.html">
                 PAGES
                 <i class="fa-sharp fa-solid fa-chevron-down"></i>
               </a>
-              <div class="nav__item-page-dropdow">
-                <div class="page-dropdow-container row">
-                  <div class="col-xl-2">
-                    <ul class="features-dropdow-list">
-                      <li class="tablinks" onmouseover="openpage(event, '1')">
-                        Phòng ngủ
-                      </li>
-                      <li class="tablinks" onmouseover="openpage(event, '2')">
-                        Phòng Khách
-                      </li>
-                      <li class="tablinks" onmouseover="openpage(event, '3')">
-                        Nhà Bếp
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-xl-10">
-                    <div id="1" class="tabcontent" style="display: block">
-                      <div class="row">
-                        <div class="col-xl-6">
-                          <img src="./img/ct-nav-7.webp" alt="" width="300" />
-                        </div>
-                        <div class="col-xl-6 features-dropdow-main-right">
-                          <h1 class="features-dropdow-main-right-title">Ghế</h1>
-                          <p style="margin: 50px 0; font-style: italic">
-                            Thư giãn, thoải mái, tiện nghi
-                          </p>
-                          <button type="button" class="btn btn-danger">
-                            Xem ngay
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="2" class="tabcontent">
-                      <div class="row">
-                        <div class="col-xl-6">
-                          <img src="./img/ct-nav-4.webp" alt="" width="300" />
-                        </div>
-                        <div class="col-xl-6 features-dropdow-main-right">
-                          <h1 class="features-dropdow-main-right-title">
-                            Giường ngủ cao cấp
-                          </h1>
-                          <p style="margin: 50px 0; font-style: italic">
-                            Thư giãn, thoải mái, tiện nghi
-                          </p>
-                          <button type="button" class="btn btn-danger">
-                            Xem ngay
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="3" class="tabcontent">
-                      <div class="row">
-                        <div class="col-xl-6">
-                          <img src="./img/ct-nav-2.webp" alt="" width="300" />
-                        </div>
-                        <div class="col-xl-6 features-dropdow-main-right">
-                          <h1 class="features-dropdow-main-right-title">
-                            Ghế cao
-                          </h1>
-                          <p style="margin: 50px 0; font-style: italic">
-                            Thư giãn, thoải mái, tiện nghi
-                          </p>
-                          <button type="button" class="btn btn-danger">
-                            Xem ngay
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </li>
-            <li class="nav__item nav__item-features">
-              <a href="">
-                FEATUES
-                <i class="fa-sharp fa-solid fa-chevron-down"></i>
-              </a>
-              <div class="nav__item-features-dropdow">
-                <div class="features-dropdow-container row">
-                  <div class="col-xl-2">
-                    <ul class="features-dropdow-list">
-                      <li
-                        class="tablinks-1"
-                        onmouseover="openfeatues(event, '4')"
-                      >
-                        Phòng ngủ
-                      </li>
-                      <li
-                        class="tablinks-1"
-                        onmouseover="openfeatues(event, '5')"
-                      >
-                        Phòng Khách
-                      </li>
-                      <li
-                        class="tablinks-1"
-                        onmouseover="openfeatues(event, '6')"
-                      >
-                        Nhà Bếp
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="col-xl-10">
-                    <div id="4" class="tabcontent-1" style="display: block">
-                      <div class="row">
-                        <div class="col-xl-6">
-                          <img src="./img/ct-nav-5.webp" alt="" width="300" />
-                        </div>
-                        <div class="col-xl-6 features-dropdow-main-right">
-                          <h1 class="features-dropdow-main-right-title">Ghế</h1>
-                          <p style="margin: 50px 0; font-style: italic">
-                            Thư giãn, thoải mái, tiện nghi
-                          </p>
-                          <button type="button" class="btn btn-danger">
-                            Xem ngay
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="5" class="tabcontent-1">
-                      <div class="row">
-                        <div class="col-xl-6">
-                          <img src="./img/ct-nav-8.webp" alt="" width="300" />
-                        </div>
-                        <div class="col-xl-6 features-dropdow-main-right">
-                          <h1 class="features-dropdow-main-right-title">
-                            Giường ngủ cao cấp
-                          </h1>
-                          <p style="margin: 50px 0; font-style: italic">
-                            Thư giãn, thoải mái, tiện nghi
-                          </p>
-                          <button type="button" class="btn btn-danger">
-                            Xem ngay
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                    <div id="6" class="tabcontent-1">
-                      <div class="row">
-                        <div class="col-xl-6">
-                          <img src="./img/ct-nav-6.webp" alt="" width="300" />
-                        </div>
-                        <div class="col-xl-6 features-dropdow-main-right">
-                          <h1 class="features-dropdow-main-right-title">
-                            Ghế cao
-                          </h1>
-                          <p style="margin: 50px 0; font-style: italic">
-                            Thư giãn, thoải mái, tiện nghi
-                          </p>
-                          <button type="button" class="btn btn-danger">
-                            Xem ngay
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </li>
             <li class="nav__item">
-              <a href="contact.html">
+              <a href="product.html">
+                Services
+                <i class="fa-sharp fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="product.html">
                 Contact
                 <i class="fa-sharp fa-solid fa-chevron-down"></i>
               </a>
             </li>
           </ul>
         </div>
-        <div class="mg50">
-          <a href="#" class="js-search-toggle"><i class="fa-solid fa-magnifying-glass"></i></a>
-        </div>
-      </nav>
+        <div class="modal" id="modal_nav"></div>
+      </header>
       <div class="nav-slider">
         <div><img src="img/1.png" alt="" /></div>
         <div><img src="img/2.png" alt="" /></div>
@@ -244,12 +333,12 @@
         <ul class="option-service">
           <div class="container">
             <div class="row">
-              <div class="col-xl-4">
+              <div class="col-6 col-sm-4">
                 <ul>
                   <li>
                     <div class="clear40"></div>
                     <div class="row">
-                      <div class="col-xl-3">
+                      <div class="col-6 col-sm-4">
                         <a href=""
                           ><img
                             src="img/Local-seo.png"
@@ -258,7 +347,7 @@
                             width="100%"
                         /></a>
                       </div>
-                      <div class="col-xl-9 option-title">
+                      <div class="col-12 col-sm-8 col-sm-8 option-title">
                         <h2>Thorough and meticulous consultation.</h2>
                         <p>
                           More than 500 customers have trusted and used our
@@ -269,13 +358,12 @@
                   </li>
                 </ul>
               </div>
-
-              <div class="col-xl-4">
+              <div class="col-6 col-sm-4">
                 <ul>
                   <li>
                     <div class="clear40"></div>
                     <div class="row">
-                      <div class="col-xl-3">
+                      <div class="col-6 col-sm-4">
                         <a href=""
                           ><img
                             src="img/Local-seo.png"
@@ -284,8 +372,8 @@
                             width="100%"
                         /></a>
                       </div>
-                      <div class="col-xl-9 option-title">
-                        <h2>Thorough and meticulous consultation</h2>
+                      <div class="col-12 col-sm-8 col-sm-8 option-title">
+                        <h2>Thorough and meticulous consultation.</h2>
                         <p>
                           More than 500 customers have trusted and used our
                           service…
@@ -295,13 +383,12 @@
                   </li>
                 </ul>
               </div>
-
-              <div class="col-xl-4">
+              <div class="col-6 col-sm-4">
                 <ul>
                   <li>
                     <div class="clear40"></div>
                     <div class="row">
-                      <div class="col-xl-3">
+                      <div class="col-6 col-sm-4">
                         <a href=""
                           ><img
                             src="img/Local-seo.png"
@@ -310,8 +397,8 @@
                             width="100%"
                         /></a>
                       </div>
-                      <div class="col-xl-9 option-title">
-                        <h2>Thorough and meticulous consultation</h2>
+                      <div class="col-12 col-sm-8 col-sm-8 option-title">
+                        <h2>Thorough and meticulous consultation.</h2>
                         <p>
                           More than 500 customers have trusted and used our
                           service…
@@ -321,13 +408,12 @@
                   </li>
                 </ul>
               </div>
-
-              <div class="col-xl-4">
+              <div class="col-6 col-sm-4">
                 <ul>
                   <li>
                     <div class="clear40"></div>
                     <div class="row">
-                      <div class="col-xl-3">
+                      <div class="col-6 col-sm-4">
                         <a href=""
                           ><img
                             src="img/Local-seo.png"
@@ -336,8 +422,8 @@
                             width="100%"
                         /></a>
                       </div>
-                      <div class="col-xl-9 option-title">
-                        <h2>Thorough and meticulous consultation</h2>
+                      <div class="col-12 col-sm-8 col-sm-8 option-title">
+                        <h2>Thorough and meticulous consultation.</h2>
                         <p>
                           More than 500 customers have trusted and used our
                           service…
@@ -347,13 +433,12 @@
                   </li>
                 </ul>
               </div>
-
-              <div class="col-xl-4">
+              <div class="col-6 col-sm-4">
                 <ul>
                   <li>
                     <div class="clear40"></div>
                     <div class="row">
-                      <div class="col-xl-3">
+                      <div class="col-6 col-sm-4">
                         <a href=""
                           ><img
                             src="img/Local-seo.png"
@@ -362,8 +447,8 @@
                             width="100%"
                         /></a>
                       </div>
-                      <div class="col-xl-9 option-title">
-                        <h2>Thorough and meticulous consultation</h2>
+                      <div class="col-12 col-sm-8 col-sm-8 option-title">
+                        <h2>Thorough and meticulous consultation.</h2>
                         <p>
                           More than 500 customers have trusted and used our
                           service…
@@ -373,13 +458,12 @@
                   </li>
                 </ul>
               </div>
-
-              <div class="col-xl-4">
+              <div class="col-6 col-sm-4">
                 <ul>
                   <li>
                     <div class="clear40"></div>
                     <div class="row">
-                      <div class="col-xl-3">
+                      <div class="col-6 col-sm-4">
                         <a href=""
                           ><img
                             src="img/Local-seo.png"
@@ -388,8 +472,8 @@
                             width="100%"
                         /></a>
                       </div>
-                      <div class="col-xl-9 option-title">
-                        <h2>Thorough and meticulous consultation</h2>
+                      <div class="col-12 col-sm-8 col-sm-8 option-title">
+                        <h2>Thorough and meticulous consultation.</h2>
                         <p>
                           More than 500 customers have trusted and used our
                           service…
@@ -905,7 +989,7 @@
                       <img src="img/logo-face.png" alt="" />
                       <img src="img/logo-you.png" alt="" />
                     </li>
-                  </uk>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -921,7 +1005,13 @@
         <div class="row justify-content-center align-items-center text-center">
           <div class="col-md-12">
             <form action="#">
-              <input type="search" name="s" id="s" placeholder="Type a keyword and hit enter..." autocomplete="false">
+              <input
+                type="search"
+                name="s"
+                id="s"
+                placeholder="Type a keyword and hit enter..."
+                autocomplete="false"
+              />
             </form>
           </div>
         </div>

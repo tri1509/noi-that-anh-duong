@@ -12,21 +12,51 @@ $(document).ready(function () {
       "<button type='button' class='image-slider-prev image-slider-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
     nextArrow:
       "<button type='button' class='image-slider-next image-slider-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 766,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   });
-});
 
-$(".nav-slider").slick({
-  dots: false,
-  infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: "linear",
-  autoplay: true,
-  autoplaySpeed: 2000,
-  prevArrow:
-    "<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
-  nextArrow:
-    "<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  $(".nav-slider").slick({
+    dots: false,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    cssEase: "linear",
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow:
+      "<button type='button' class='slick-prev slick-arrow'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+    nextArrow:
+      "<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
+  });
 });
 
 function openpage(evt, cityName) {
@@ -58,11 +88,14 @@ function openfeatues(evt, cityName) {
 }
 
 let nav = document.getElementById("nav");
+let nav_mb = document.getElementById("nav_mb");
 document.addEventListener("scroll", (event) => {
   if (window.scrollY > 100) {
     nav.classList.add("tofixed");
+    nav_mb.classList.add("tofixed");
   } else {
     nav.classList.remove("tofixed");
+    nav_mb.classList.remove("tofixed");
   }
 });
 
