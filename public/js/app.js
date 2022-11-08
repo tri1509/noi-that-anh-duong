@@ -57,6 +57,26 @@ $(document).ready(function () {
     nextArrow:
       "<button type='button' class='slick-next slick-arrow'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
   });
+
+  var offset = 800;
+  var duration = 150;
+  $(function () {
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > offset) $("#top-up").fadeIn(duration);
+      else $("#top-up").fadeOut(duration);
+    });
+    $("#top-up").click(function () {
+      $("body,html").animate(
+        {
+          scrollTop: 0,
+        },
+        duration
+      );
+    });
+  });
+
+  $(".loader").delay(0).fadeOut("slow");
+  $("#overlayer").delay(0).fadeOut("slow");
 });
 
 function openpage(evt, cityName) {
@@ -113,3 +133,13 @@ var searchToggle = function () {
   });
 };
 searchToggle();
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "60%";
+  document.getElementById("modal_nav").style.display = "block";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("modal_nav").style.display = "none";
+}

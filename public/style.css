@@ -3,12 +3,38 @@
 @import "../public/css/import/header.css";
 @import "../public/css/import/home.css";
 @import "../public/css/import/product.css";
+@import "../public/css/import/contact.css";
 @import "../public/css/import/footer.css";
 
 body {
   width: 100%;
   margin: 0 auto;
   box-sizing: border-box;
+  line-height: 1.8;
+  font-size: 15px;
+  color: #7a7a7a;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s all ease;
+  -o-transition: 0.3s all ease;
+  transition: 0.3s all ease;
+}
+body.offcanvas-menu:before {
+  opacity: 1;
+  visibility: visible;
 }
 .mg50 {
   margin: 0 10%;
@@ -29,7 +55,9 @@ body {
   clear: both;
   height: 10px;
 }
-
+.text-black {
+  color: #000000 !important;
+}
 .show911 {
   display: none;
 }
@@ -62,4 +90,72 @@ body::-webkit-scrollbar {
   bottom: 0;
   z-index: 99;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+#top-up {
+  cursor: pointer;
+  position: fixed;
+  z-index: 9999;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+  text-align: center;
+  background-color: transparent;
+  transition: 0.3s;
+}
+#top-up i {
+  font-size: 40px;
+}
+#top-up:hover {
+  color: #ff7b00;
+  transform: scale(1.2);
+}
+
+#overlayer {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 7100;
+  background: #ffffff;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.loader {
+  z-index: 7700;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.spinner-border {
+  color: #e84545;
+}
+.spinner-border {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  vertical-align: text-bottom;
+  border: 0.25em solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  -webkit-animation: spinner-border 0.75s linear infinite;
+  animation: spinner-border 0.75s linear infinite;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }

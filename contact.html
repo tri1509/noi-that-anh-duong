@@ -1,354 +1,592 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-      />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="public/style.css">
-    <link rel="stylesheet" href="public/css/style.css" />
-    <title>Document</title>
-</head>
-
-<body>
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" href="public/reset.css" />
+    <link rel="stylesheet" href="public/style.css" />
+    <title>Ánh Dương</title>
+  </head>
+  <body>
     <div class="warpper">
+      <header class="hide911">
         <nav class="nav mg50">
-            <div class="nav__title">
-                <span class="header-logo"><a href="">FURNI.COM</a></span>
-            </div>
+          <div class="nav__title">
+            <span class="header-logo"><a href="">FURNI.COM</a></span>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item-top">
+              <i class="fa-solid fa-phone"></i>
+              0904 328 000
+            </li>
+            <li class="nav__item-top">
+              <i class="fa-regular fa-envelope"></i>
+              gmail.com
+            </li>
+            <li class="nav__item-top">
+              <i class="fa-solid fa-user"></i>
+              login
+            </li>
+          </ul>
+        </nav>
+        <nav class="nav position-relative" id="nav">
+          <div class="mg50">
             <ul class="nav__list">
-                <li class="nav__item">
-                    <i class="bi bi-telephone-x"></i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                        fill="currentColor"  class="bi bi-telephone-x" viewBox="0 0 16 16">
-                        <path
-                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
-                        <path fill-rule="evenodd"
-                            d="M11.146 1.646a.5.5 0 0 1 .708 0L13 2.793l1.146-1.147a.5.5 0 0 1 .708.708L13.707 3.5l1.147 1.146a.5.5 0 0 1-.708.708L13 4.207l-1.146 1.147a.5.5 0 0 1-.708-.708L12.293 3.5l-1.147-1.146a.5.5 0 0 1 0-.708z" />
-                    </svg>
-                    <a href="#">0904 328 000</a>
-                </li>
-                <li class="nav__item">
-                    <i class="bi bi-envelope-plus"></i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                        fill="currentColor" class="bi bi-envelope-plus" viewBox="0 0 16 16">
-                        <path
-                            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
-                        <path
-                            d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z" />
-                    </svg>
-                    <a href="#">gmail.com</a>
-                </li>
-                <li class="nav__item">
-                    <i class="bi bi-person-plus"></i><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
-                         fill="currentColor" class="bi bi-person-plus" viewBox="0 0 16 16">
-                        <path
-                            d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0zm4 8c0 1-1 1-1 1H1s-1 0-1-1 1-4 6-4 6 3 6 4zm-1-.004c-.001-.246-.154-.986-.832-1.664C9.516 10.68 8.289 10 6 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10z" />
-                        <path fill-rule="evenodd"
-                            d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z" />
-                    </svg>
-                    <a href="#" >login</a>
-                </li>
-            </ul>
-        </nav>
-        <nav class="nav mg50">
-            <div class="contrainer">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="">Home</a></li>
-                    <li class="nav__item">
-                        <a href="">PAGES
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chevron-down" viewBox="0 0 16 16" style="margin-bottom: 3px">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                            </svg></a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="">FEATUES
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chevron-down" viewBox="0 0 16 16" style="margin-bottom: 3px">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                            </svg></a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="">BLOG
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                class="bi bi-chevron-down" viewBox="0 0 16 16" style="margin-bottom: 3px">
-                                <path fill-rule="evenodd"
-                                    d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z" />
-                            </svg></a>
-                    </li>
-                </ul>
-                <div class="contact-search">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#ffff" class="bi bi-search"
-                        viewBox="0 0 16 16">
-                        <path
-                            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
-                    </svg>
+              <li class="nav__item">
+                <a href="./">HOME</a>
+              </li>
+              <li class="nav__item nav__item-page">
+                <a href="product.html" class="">
+                  PAGES
+                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="nav__item-page-dropdow">
+                  <div class="container page-dropdow-container">
+                    <div class="row">
+                      <div class="col-4">
+                        <ul class="features-dropdow-list">
+                          <li
+                            class="tablinks"
+                            onmouseover="openpage(event, '1')"
+                          >
+                            Phòng ngủ
+                          </li>
+                          <li
+                            class="tablinks"
+                            onmouseover="openpage(event, '2')"
+                          >
+                            Phòng Khách
+                          </li>
+                          <li
+                            class="tablinks"
+                            onmouseover="openpage(event, '3')"
+                          >
+                            Nhà Bếp
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-8">
+                        <div id="1" class="tabcontent" style="display: block">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-7.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Ghế
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="2" class="tabcontent">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-4.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Giường ngủ cao cấp
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="3" class="tabcontent">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-2.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Ghế cao
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-            </div>
-        </nav>
-
-        <div class="category">
-            <ul class="category-product">
-                <li class="category-item">
-                    <div class="catelogy-image">
-                        
+              </li>
+              <li class="nav__item nav__item-features">
+                <a href="">
+                  FEATUES
+                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                </a>
+                <div class="nav__item-features-dropdow">
+                  <div class="container features-dropdow-container">
+                    <div class="row">
+                      <div class="col-4">
+                        <ul class="features-dropdow-list">
+                          <li
+                            class="tablinks-1"
+                            onmouseover="openfeatues(event, '4')"
+                          >
+                            Phòng ngủ
+                          </li>
+                          <li
+                            class="tablinks-1"
+                            onmouseover="openfeatues(event, '5')"
+                          >
+                            Phòng Khách
+                          </li>
+                          <li
+                            class="tablinks-1"
+                            onmouseover="openfeatues(event, '6')"
+                          >
+                            Nhà Bếp
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col-8">
+                        <div id="4" class="tabcontent-1" style="display: block">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-5.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Ghế
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="5" class="tabcontent-1">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-8.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Giường ngủ cao cấp
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                        <div id="6" class="tabcontent-1">
+                          <div class="row">
+                            <div class="col-6">
+                              <img
+                                src="./img/ct-nav-6.webp"
+                                alt=""
+                                width="100%"
+                              />
+                            </div>
+                            <div class="col-6 features-dropdow-main-right">
+                              <h1 class="features-dropdow-main-right-title">
+                                Ghế cao
+                              </h1>
+                              <p style="margin: 50px 0; font-style: italic">
+                                Thư giãn, thoải mái, tiện nghi
+                              </p>
+                              <button type="button" class="btn btn-danger">
+                                Xem ngay
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </li>
-                <li class="category-item">
-                    <div class="catelogy-image-I">                      
-                    </div>
-                </li>
-                <li class="category-item">
-                    <div class="catelogy-image-II">
-                    </div>
-                </li>
-                <li class="category-item">
-                    <div class="catelogy-image-III">                       
-                    </div>
-                </li>
-                <li class="category-item">
-                    <div class="catelogy-image-IV">                     
-                    </div>
-                </li>
-                <li class="category-item">
-                    <div class="catelogy-image-V">                     
-                    </div>
-                </li>
+                  </div>
+                </div>
+              </li>
+              <li class="nav__item">
+                <a href="contact.html">
+                  Contact
+                  <i class="fa-sharp fa-solid fa-chevron-down"></i>
+                </a>
+              </li>
             </ul>
+          </div>
+          <div class="mg50">
+            <a href="#" class="js-search-toggle"
+              ><i class="fa-solid fa-magnifying-glass"></i
+            ></a>
+          </div>
+        </nav>
+      </header>
+      <header class="show911">
+        <nav class="nav-mb" id="nav_mb">
+          <span class="nav-bars" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+          </span>
+          <span class="nav-bars">
+            <img src="img/logo-anhduong.png" alt="" width="200" height="auto" />
+          </span>
+          <span class="nav-bars">
+            <a href="#" class="js-search-toggle">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+          </span>
+        </nav>
+        <div id="mySidenav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            &times;
+          </a>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="">HOME</a>
+            </li>
+            <li class="nav__item">
+              <a href="product.html">
+                PAGES
+                <i class="fa-sharp fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="product.html">
+                Services
+                <i class="fa-sharp fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="product.html">
+                Contact
+                <i class="fa-sharp fa-solid fa-chevron-down"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="modal" id="modal_nav" onclick="closeNav()"></div>
+      </header>
+      <div
+        class="hero-slant overlay"
+        data-stellar-background-ratio="0.5"
+        style="background-image: url('img/hero-min.jpg')"
+      >
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-7 intro text-center">
+              <h1
+                class="text-white font-weight-bold mb-4"
+                data-aos="fade-up"
+                data-aos-delay="0"
+              >
+                Contact
+              </h1>
+              <p
+                class="text-white mb-4"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
+                Far far away, behind the word mountains, far from the countries
+                Vokalia and Consonantia, there live the blind texts. Separated
+                they live.
+              </p>
+              <p data-aos="fade-up" data-aos-delay="200">
+                <a href="#" class="btn btn-primary">Get Started</a>
+              </p>
+            </div>
+          </div>
         </div>
 
-
-        <div class="option">
-                <div class="option-title">
-                    <h1>RELIABLE CHOICE ANH DUONG</h1>
-                </div>
-                <div class="clear20"></div>
-                <div class="option-content">
-                    <p>
-                        <strong>Anh Duong </strong>Construction and Furniture Co., Ltd is
-                        confident to be the number 1 choice for customers when they have
-                        demand for interior design and construction. Each step in a
-                        project, we all have our own strengths, different from other
-                        companies in the same field, ensuring that our customers are
-                        satisfied…
-                    </p>
-                </div>
-                <ul class="option-service">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-4">
-                                <ul>
-                                    <li>
-                                        <div class="clear40"></div>
-                                        <div class="row">
-                                            <div class="col-xl-3">
-                                                <a href=""><img src="img/Local-seo.png" alt="consulting service"
-                                                        title="consulting service" width="100px" /></a>
-                                            </div>
-                                            <div class="col-xl-9 option-title">
-                                                <h2>Thorough and meticulous consultation.</h2>
-                                                <p>
-                                                    More than 500 customers have trusted and used our
-                                                    service…
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-xl-4">
-                                <ul>
-                                    <li>
-                                        <div class="clear40"></div>
-                                        <div class="row">
-                                            <div class="col-xl-3">
-                                                <a href=""><img src="img/Local-seo.png" alt="consulting service"
-                                                        title="consulting service" width="100px" /></a>
-                                            </div>
-                                            <div class="col-xl-9 option-title">
-                                                <h2>Thorough and meticulous consultation</h2>
-                                                <p>
-                                                    More than 500 customers have trusted and used our
-                                                    service…
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-xl-4">
-                                <ul>
-                                    <li>
-                                        <div class="clear40"></div>
-                                        <div class="row">
-                                            <div class="col-xl-3">
-                                                <a href=""><img src="img/Local-seo.png" alt="consulting service"
-                                                    title="consulting service" width="100px" /></a>
-                                            </div>
-                                            <div class="col-xl-9 option-title">
-                                                <h2>Thorough and meticulous consultation</h2>
-                                                <p>
-                                                    More than 500 customers have trusted and used our
-                                                    service…
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-xl-4">
-                                <ul>
-                                    <li>
-                                        <div class="clear40"></div>
-                                        <div class="row">
-                                            <div class="col-xl-3">
-                                                <a href=""><img src="img/Local-seo.png" alt="consulting service"
-                                                    title="consulting service" width="100px" /></a>
-                                            </div>
-                                            <div class="col-xl-9 option-title">
-                                                <h2>Thorough and meticulous consultation</h2>
-                                                <p>
-                                                    More than 500 customers have trusted and used our
-                                                    service…
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-xl-4">
-                                <ul>
-                                    <li>
-                                        <div class="clear40"></div>
-                                        <div class="row">
-                                            <div class="col-xl-3">
-                                                <a href=""><img src="img/Local-seo.png" alt="consulting service"
-                                                        title="consulting service" width="100px" /></a>
-                                            </div>
-                                            <div class="col-xl-9 option-title">
-                                                <h2>Thorough and meticulous consultation</h2>
-                                                <p>
-                                                    More than 500 customers have trusted and used our
-                                                    service…
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="col-xl-4">
-                                <ul>
-                                    <li>
-                                        <div class="clear40"></div>
-                                        <div class="row">
-                                            <div class="col-xl-3">
-                                                <a href=""><img src="img/Local-seo.png" alt="consulting service"
-                                                        title="consulting service" width="100px" /></a>
-                                            </div>
-                                            <div class="col-xl-9 option-title">
-                                                <h2>Thorough and meticulous consultation</h2>
-                                                <p>
-                                                    More than 500 customers have trusted and used our
-                                                    service…
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+        <div
+          class="slant"
+          style="background-image: url('images/slant-grey.svg')"
+        ></div>
+      </div>
+      <div class="section-grey bg-light">
+        <div class="container bg-white p-5">
+          <div class="block">
+            <div class="row justify-content-center">
+              <div
+                class="col-md-12 col-lg-12 pb-4"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
+                <div class="row">
+                  <div class="col-lg-4">
+                    <div
+                      class="service-2 no-shadow link horizontal d-flex active"
+                      data-aos="fade-left"
+                      data-aos-delay="0"
+                    >
+                      <div class="service-icon color-1 mb-4">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-geo-alt-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
+                          />
+                        </svg>
+                      </div>
+                      <!-- /.icon -->
+                      <div class="service-contents">
+                        <p>43 Raymouth Rd. Baltemoer, London 3910</p>
+                      </div>
+                      <!-- /.service-contents-->
                     </div>
+                    <!-- /.service -->
+                  </div>
+                  <div class="col-lg-4">
+                    <div
+                      class="service-2 no-shadow link horizontal d-flex active"
+                      data-aos="fade-left"
+                      data-aos-delay="0"
+                    >
+                      <div class="service-icon color-1 mb-4">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-envelope-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"
+                          />
+                        </svg>
+                      </div>
+                      <!-- /.icon -->
+                      <div class="service-contents">
+                        <p>info@yourdomain.com</p>
+                      </div>
+                      <!-- /.service-contents-->
+                    </div>
+                    <!-- /.service -->
+                  </div>
+
+                  <div class="col-lg-4">
+                    <div
+                      class="service-2 no-shadow link horizontal d-flex active"
+                      data-aos="fade-left"
+                      data-aos-delay="0"
+                    >
+                      <div class="service-icon color-1 mb-4">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-telephone-fill"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
+                          />
+                        </svg>
+                      </div>
+                      <!-- /.icon -->
+                      <div class="service-contents">
+                        <p>+1 294 3925 3939</p>
+                      </div>
+                      <!-- /.service-contents-->
+                    </div>
+                    <!-- /.service -->
+                  </div>
+                </div>
+                <form>
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label class="text-black" for="fname">First name</label>
+                        <input type="text" class="form-control" id="fname" />
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="form-group">
+                        <label class="text-black" for="lname">Last name</label>
+                        <input type="text" class="form-control" id="lname" />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="text-black" for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" />
+                  </div>
+                  <div class="form-group">
+                    <label class="text-black" for="message">Message</label>
+                    <textarea
+                      name=""
+                      class="form-control"
+                      id="message"
+                      cols="30"
+                      rows="5"
+                    ></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary-hover-outline">
+                    Send Message
+                  </button>
+                </form>
+              </div>
             </div>
-
-
-
-
-
-
-            
-            <footer>
-                <div class="footer-backround">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-xl-4">
-                                <div class="footer-information">
-                                    <h1>Thông Tin Công Ty</h1>
-                                    <ul class="information">
-                                        <li>+ Địa Chỉ</li>
-                                        <li>+ Xưởng Sản Xuất</li>
-                                        <li>+ Điện Thoại</li>
-                                        <li>+ Email:</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="footer-information">
-                                    <h1>Thông Tin Hữu Ích</h1>
-                                    <ul class="information">
-                                        <li><i class="fa-solid fa-chevron-right"></i> Bảng Giá</li>
-                                        <li><i class="fa-solid fa-chevron-right"></i> Cam Kết</li>
-                                        <li><i class="fa-solid fa-chevron-right"></i> Quy Trình</li>
-                                        <li>
-                                            <i class="fa-solid fa-chevron-right"></i> Chính Sách
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-xl-4">
-                                <div class="footer-information">
-                                    <h1>Mạng Xã Hội</h1>
-                                    <uk class="footer-network">
-                                        <li class="footer-img-fb">
-                                            <img src="img/logo-face.png" alt="" />
-                                            <a href="" class="footer-network">
-                                                <p>Fanpage FaceBook</p>
-                                            </a>
-                                        </li>
-                                        <li class="footer-img-youtube">
-                                            <a href=""><img src="img/logo-you.png" alt="" />
-                                                <p>Youtube Nội Thất</p>
-                                            </a>
-                                        </li>
-                                        <div class="clear20"></div>
-                                        <li class="footer-social-network">
-                                            <span><i class="fa-brands fa-facebook text-primary"></i></span>
-                                            <span><i class="fa-brands fa-instagram text-info"></i></span>
-                                            <span><i class="fa-brands fa-tiktok text-white-50"></i></span>
-                                            <span><i class="fa-brands fa-google-plus text-danger"></i></span>
-                                        </li>
-                                    </uk>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <p>No Copyright 1996</p>
-                </div>
-            </footer>
+          </div>
         </div>
-        <script
-            type="text/javascript"
-            src="https://code.jquery.com/jquery-1.11.0.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
-        ></script>
-        <script
-            type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-        ></script>
-        <script src="script.js"></script>
-        <script src="js/app.js"></script>
-    </body>
+      </div>
+      <footer>
+        <div class="footer-backround">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-4">
+                <div class="footer-information">
+                  <h1>Thông Tin Công Ty</h1>
+                  <ul class="information">
+                    <li>
+                      <p>
+                        + Địa chỉ: 235/52 đường trục, Phường 13, Quận Bình
+                        Thạnh, Tp.HCM
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        + Xưởng sản xuất: 175A đường Vườn Lài , Phường An Phú
+                        Đông, Quận 12, Tp.HCM
+                      </p>
+                    </li>
+                    <li>
+                      <p>+ Điện thoại: 03 555 34567 - Zalo: 03 555 34567</p>
+                    </li>
+                    <li><p>+ Email: noithat.adt@gmail.com</p></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-xl-4">
+                <div class="footer-information">
+                  <h1>Thông Tin Hữu Ích</h1>
+                  <ul class="information">
+                    <li><i class="fa-solid fa-chevron-right"></i>Bảng Giá</li>
+                    <li><i class="fa-solid fa-chevron-right"></i>Cam Kết</li>
+                    <li><i class="fa-solid fa-chevron-right"></i>Quy Trình</li>
+                    <li><i class="fa-solid fa-chevron-right"></i>Chính Sách</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-xl-4">
+                <div class="footer-information">
+                  <h1>Mạng Xã Hội</h1>
+                  <ul class="information">
+                    <li class="footer-img">
+                      <img src="img/logo-face.png" alt="" />
+                      <a href="" class="footer-network">
+                        <p>Fanpage FaceBook</p>
+                      </a>
+                    </li>
+                    <li class="footer-img">
+                      <img src="img/logo-you.png" alt="" />
+                      <a href="">
+                        <p>Youtube Nội Thất</p>
+                      </a>
+                    </li>
+                    <div class="clear20"></div>
+                    <li class="footer-social-network">
+                      <img src="img/logo-face.png" alt="" />
+                      <img src="img/logo-you.png" alt="" />
+                      <img src="img/logo-face.png" alt="" />
+                      <img src="img/logo-you.png" alt="" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <div class="search-wrap">
+      <a href="#" class="close-search js-search-toggle">
+        <span>Close</span>
+      </a>
+      <div class="container">
+        <div class="row justify-content-center align-items-center text-center">
+          <div class="col-md-12">
+            <form action="#">
+              <input
+                type="search"
+                name="s"
+                id="s"
+                placeholder="Type a keyword and hit enter..."
+                autocomplete="false"
+              />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+  <script src="public/js/app.js"></script>
 </html>
