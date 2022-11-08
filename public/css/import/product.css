@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Kolker+Brush&family=Ubuntu:wght@300&display=swap");
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-gap: 40px 30px;
-  padding: 20px 20%;
+  padding: 20px;
   position: relative;
 }
 
@@ -63,11 +63,8 @@
 }
 
 .product-grid-item:hover .product-grid-title {
-  bottom: 10%;
+  bottom: 30%;
   filter: blur(0);
-}
-.product-grid-item:hover .product-grid-images {
-  transform: scale(1.2);
 }
 .product-grid-images {
   transition: 0.3s;
@@ -89,11 +86,464 @@
 .product-fornt h1 {
   font-family: "Ubuntu", sans-serif;
 }
-h1 {
+.popup-header-title h1 {
   font-family: "Kolker Brush", cursive;
   font-size: 3.6rem;
   font-weight: 300;
   letter-spacing: 1px;
   padding: 20px;
+}
+.product-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #f1edea;
+  border-radius: 12px;
+}
+.product-detail h2,
+.product-detail span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.product-detail span {
+  color: red;
+}
+
+/* product nav */
+.product-wapper {
+  margin: 0 10%;
+}
+.product-search {
+  position: relative;
+}
+.product-nav {
+  text-align: end;
+}
+.search-field {
+  padding: 20px;
+  border: none;
+  border-bottom: 1px solid rgba(17, 17, 17, 0.3);
+}
+.product-search-icon {
+  position: absolute;
+  top: 25%;
+  right: 10px;
+}
+
+/* catelogis */
+.product-categori {
+  position: relative;
+}
+.product-categori h1 {
+  padding: 20px 10px;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.product-categori ul li a {
+  color: black;
+  font-size: 18px;
+  font-weight: 600;
+}
+.product-categori ul li {
+  list-style: none;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgba(19, 17, 17, 0.1);
+}
+.product-latest {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 20px;
+}
+/* dịch vụ */
+
+.product-service-item {
+  position: relative;
+  min-width: 300px;
+  min-height: 300px;
+  overflow: hidden;
+}
+.product-service-item:hover .product-service-images {
+  filter: blur(1px);
+  /* background: rgba(2, 0, 0, 0.1); */
+}
+.product-service-images {
+  width: 100%;
+  overflow: hidden;
+  height: 600px;
+  background-image: url(/img/product_s138-sp.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.product-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* background: rgba(17, 17, 17, 0.5); */
+  width: 100%;
+  height: 100%;
+  transition: 0.7s;
+}
+.product-service-title p {
+  position: absolute;
+  top: 33%;
+  left: 15%;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.product-service-title h1 {
+  position: absolute;
+  top: 40%;
+  left: 20%;
+  color: white;
+  letter-spacing: 1px;
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  max-width: 100px;
+}
+
+.product-service-price {
+  position: absolute;
+  top: 50%;
+  right: 41%;
+  transform: translate(-50%, -50%);
+}
+.product-service-price span {
+  padding: 50px;
+  background: rgb(238, 255, 0);
+  border-radius: 50%;
+  font-size: 2.5rem;
+  color: rgb(145, 1, 1);
+}
+
+/* slider product */
+.product-image-item {
+  padding: 2px;
+  max-width: 350px;
+  max-height: 450px;
+  position: relative;
+  margin: 1rem;
+  overflow: hidden;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+}
+.product-ds-title {
+  position: absolute;
+  bottom: -30%;
+  background: rgb(195, 194, 194, 0.5);
+  color: black;
+  left: 10%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 500;
+  filter: blur(10px);
+  opacity: 0;
+  transition: 0.8s;
+}
+.product-image-item:hover .product-ds-title {
+  bottom: 20%;
+  opacity: 1;
+  filter: blur(0);
+}
+.product-pagination {
+  margin: 50px 0 40px 0;
+}
+.product-pagination ul {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.product-pagination ul li {
+  padding: 1rem 2rem;
+  font-size: 1.3rem;
+}
+/* product-banner-booter */
+.product-banner-image {
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+.product-banner-booter {
+  background-image: url(/img/slide_1.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 65%;
+  margin-left: 40px;
+  height: 500px;
   text-align: center;
+  position: relative;
+}
+.product-banne-content {
+  width: 28%;
+  height: 100%;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.product-banne-content h1 {
+  position: absolute;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  top: 5%;
+  left: 5%;
+  padding: 10px;
+  transition: 1s;
+}
+.product-banner-image:hover .product-banne-content h1 {
+  opacity: 0;
+  filter: blur(10px);
+}
+.product-banne-content ul {
+  width: 100%;
+  position: absolute;
+  bottom: -60%;
+  filter: blur(10px);
+  opacity: 0;
+  transition: 0.7s;
+}
+.product-banne-content ul h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  letter-spacing: 1px;
+  color: black;
+}
+.product-banne-content ul li {
+  width: 100%;
+  padding: 30px;
+}
+.product-banne-content ul li a {
+  font-size: 1rem;
+  color: black;
+  font-weight: 600;
+  padding: 10px;
+}
+.product-banner-image:hover .product-banne-content ul {
+  bottom: 0;
+  filter: blur(0);
+  opacity: 1;
+}
+
+/* product-tips */
+.product-tips {
+  width: 100%;
+  height: 550px;
+  padding: 1rem;
+  margin-bottom: 10px;
+}
+.product-tips-image {
+  width: 100%;
+  height: 500px;
+  padding: 1rem;
+  position: relative;
+}
+.product-tips-image img {
+  width: 30rem;
+  height: 21.875em;
+  position: absolute;
+  top: 20%;
+  right: 40%;
+  transform: translate(20%, 0);
+}
+.product-tips-image::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  right: 20%;
+  width: 16.625em;
+  height: 19.625em;
+  background: rgb(255, 154, 3);
+}
+
+.product-tips-title {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.product-tips-title h1 {
+  position: absolute;
+  margin: 1rem;
+  padding: 1rem;
+  max-width: 350px;
+  top: 30%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+.peoduct-tips-number p {
+  position: absolute;
+  top: 50%;
+  left: 30%;
+  display: block;
+  font-size: 2rem;
+
+  color: rgb(166, 103, 9);
+}
+.peoduct-tips-number p::after {
+  content: "Open up the space";
+  padding: 1em;
+  font-size: 1.7rem;
+}
+.peoduct-tips-number p:nth-child(2)::after {
+  content: "Introduce more ligth";
+}
+.peoduct-tips-number p:last-child::after {
+  content: "Consider glass partitions";
+}
+.peoduct-tips-number p:nth-child(2) {
+  position: absolute;
+  top: 60%;
+  left: 30%;
+  display: block;
+  font-size: 2rem;
+  color: rgb(255, 154, 3);
+}
+.peoduct-tips-number p:last-child {
+  position: absolute;
+  top: 70%;
+  left: 30%;
+  display: block;
+  font-size: 2rem;
+  color: rgb(136, 82, 0);
+}
+
+@media screen and (max-width: 450px) {
+  .warpper {
+    width: 390px;
+  }
+  .product-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+    position: relative;
+  }
+  .product-detail {
+    display: block;
+    padding: 5px 10px;
+    background: #f1edea;
+  }
+  .product-detail {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 5px 10px;
+    background: rgb(241, 237, 234);
+    border-radius: 1px;
+    height: 3rem;
+  }
+  .product-detail h2,
+  .product-detail span {
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+  .product-grid-images img {
+    width: 100%;
+    z-index: 100;
+  }
+  .product-grid-icon {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    filter: blur(10px);
+    transition: 0.7s;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 999;
+  }
+  .product-grid-icon i {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  .product-grid-title {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    background: #2d3b58;
+    width: 100%;
+    padding: 5px 0;
+    text-align: center;
+    z-index: 100;
+    transition: 0.7s;
+    filter: blur(10px);
+  }
+  .product-categori h1 {
+    padding: 5px;
+    text-align: end;
+  }
+  .product-categori ul li {
+    padding: 10px 4px;
+  }
+  .product-banner-image {
+    width: 100%;
+    height: 500px;
+    display: block;
+  }
+  .popup-header {
+    display: none;
+  }
+  .product-banner-booter {
+    background-image: url(/img/slide_1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 250px;
+    text-align: center;
+    position: relative;
+  }
+  .product-tips {
+    width: 100%;
+    height: 500px;
+  }
+  .product-tips-image img {
+    display: none;
+  }
+  .product-tips-image::before {
+    display: none;
+  }
+  .product-tips-title {
+    position: absolute;
+    background: #0c0d0e22;
+    width: 100%;
+    height: 100%;
+  }
+  .product-tips-title h1 {
+    top: 10%;
+    left: 30%;
+    font-size: 1.7rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    color: rgb(255, 255, 255);
+    z-index: 100;
+  }
+  .peoduct-tips-number p,
+  .peoduct-tips-number p:nth-child(2),
+  .peoduct-tips-number p:last-child {
+    display: none;
+  }
+  .image-slider {
+    display: none;
+  }
+  .product-pagination {
+    margin: 0;
+  }
+  .product-pagination ul li {
+    padding: 1em;
+  }
 }
